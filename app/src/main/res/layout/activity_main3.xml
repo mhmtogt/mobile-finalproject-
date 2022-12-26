@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="#00BCD4"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+
+    <Button
+        android:id="@+id/dugme"
+        android:layout_width="wrap_content"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:backgroundTint="#00BCD4"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/men" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView4"
+
+        android:name="com.mustafa.finaluygulama.bir"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_bir" />
+
+
+</LinearLayout>
+
